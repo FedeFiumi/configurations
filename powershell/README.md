@@ -59,3 +59,9 @@ References: https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-
 		  download another one with that support (e.g. the theme above named paradox has
 		  Cascadia as default character set....had to download Caskaydia Cove Nerd Font
 		  from the link right above)
+
+	3) Download the set of characters from Nerd fonts, you ll get a zipped file.
+	   Extract the files, select all the ones in the extracted directory
+		 (apart for the license and the README...), right click and select `install`
+
+6) Close all the open terminal and re-open it, DONEEEEEEE! YEEEEEEAH B-)
