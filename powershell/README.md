@@ -4,6 +4,9 @@ References: https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-
 
 ## MAKE SURE FOR ALL THE FOLLOWING OPERATION POWERSHELL IS LAUNCHED IN ADMINISTRATOR MODE!
 
+
+## Modify powershell theme
+
 1) Download oh-posh running (this download directly from the app store and
    permits automatic updates):
 
@@ -65,3 +68,13 @@ References: https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-
 		 (apart for the license and the README...), right click and select `install`
 
 6) Close all the open terminal and re-open it, DONEEEEEEE! YEEEEEEAH B-)
+
+
+
+## Set up command aliases
+
+1) Copy the directory `aliases` in `C:\`
+2) Open environment variable menu
+3) Add `C:\aliases`to the paths under system variable named `Path`
+   (One of the voices on the left in the in the scroll menu in the lower side)
+4) save, close and re-open the powershell, DONEEEEEE! YEEEEEEAH B-)
