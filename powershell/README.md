@@ -73,8 +73,34 @@ References: https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-
 
 ## Set up command aliases
 
-1) Copy the directory `aliases` in `C:\`
-2) Open environment variable menu
-3) Add `C:\aliases`to the paths under system variable named `Path`
-   (One of the voices on the left in the in the scroll menu in the lower side)
-4) save, close and re-open the powershell, DONEEEEEE! YEEEEEEAH B-)
+1) Edit the powershell profile
+
+	 1) Run to see if a profile is present
+
+			`$PROFILE`
+
+	 2) If a profile is present, run:
+
+				`notepad <path_of_the_profile>`
+
+			If a profile is not present crete a file in this path and open the file:
+
+				`C:\Users\<USER>\Documents\WindowsPowerShell\Microsoft.<PROFILE_NAME>.ps1`
+
+			where <USER> is usually the name of the PC account (es: FedeFiumi) and the
+			profile name is free, choose the one that fits most.
+
+2) added the following line to the opening file, save and close:
+
+		```
+		function gits{ git status @args}
+		function gitd{ git diff @args}
+		function gitp{ git pull @args }
+		function gitl{ git log @args }
+
+		function gcm{ git commit -m @args }
+		function gck{ git checkout @args }
+		function gsburra{ git submodule update @args }
+		```
+
+3) save, close and re-open the powershell, DONEEEEEE! YEEEEEEAH B-)
