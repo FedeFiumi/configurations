@@ -1,0 +1,8 @@
+alias gits='git status'
+alias gitd='git diff'
+alias gitl='git log'
+alias gitp='git pull'
+alias gsburra='git submodule update'
+alias gcm='git commit -m'
+alias back='source ~/utilities/back_script.sh "$@"'
+alias htmlopen='source ~/utilities/htmlopen_script.sh "$@"'
