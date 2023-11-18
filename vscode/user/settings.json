@@ -2,15 +2,13 @@
   "workbench.colorTheme": "Default Dark+",
   "cmake.configureOnOpen": false,
   "editor.formatOnSaveMode": "modifications",
-  "editor.rulers": [
-      80,
-      90
-  ],
+  "editor.rulers": [90],
   "editor.renderWhitespace": "boundary",
   "workbench.quickOpen.closeOnFocusLost": false,
   "editor.tabSize": 2,
   "python.analysis.autoImportCompletions": false,
   "markdown.validate.enabled": true,
+  "redhat.telemetry.enabled": false,
   "[python]": {
       "editor.formatOnType": true
   }
