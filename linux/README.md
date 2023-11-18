@@ -21,9 +21,40 @@
 
 4. Close all the open terminal and re-open it, DONEEEEEEE! YEEEEEEAH B-)
 
-## Set up easter eggs
+## Customize shell prompt
 
-### Random fortune by cowsay
+### Add git branch to the end of the prompt
+
+Add (make sure part fo the code is not already present) the following piece of
+code to ~/.bashrc:
+
+```bash
+# Get git branch name
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(parse_git_branch) \$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch) \$ '
+fi
+unset color_prompt force_color_prompt
+```
+
+## Misc
+
+### Disable the bell
+
+Add the following to your ~/.bashrc:
+
+```bash
+bind 'set bell-style none'
+```
+
+### Set up easter eggs
+
+#### Random fortune by cowsay
 
 1. Run: `sudo apt install fortune cowsay`
 
@@ -34,7 +65,7 @@
     fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
     ```
 
-### Sudo insults
+#### Sudo insults
 
 1. Run: `sudo visudo`
 
