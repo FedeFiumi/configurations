@@ -125,9 +125,11 @@ MAKE SURE POWERSHELL IS IN ADMINISTRATOR MODE FOR ALL THE FOLLOWING OPERATIONS!
     function gitd{ git diff @args}
     function gitp{ git pull @args }
     function gitl{ git log @args }
+    function gitb{ git branch @args }
     function gcm{ git commit -m @args }
     function gck{ git checkout @args }
-    function gsburra{ git submodule update @args }
+    function gsu{ git submodule update @args }
+    function gsf{ git submodule foreach @args }
     ```
 
 3. Reboot Powershell
